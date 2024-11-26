@@ -36,14 +36,15 @@
 </div>
 
 
-
+<div class="container mt-5">
             <div class="wrapper wrapper-content">
                 <div class="animated fadeInRightBig">
-                    <a href="{{ url('/book-form') }}" class="btn btn-primary">Add book</a>
+                    <a href="{{ url('/add-book-form') }}" class="btn btn-primary">Add book</a>
                
+  <div class="container mt-5">                 
                     <div class="row">
                     @foreach($data as $d)
-                        <div class="col">
+                        <div class="col ">
                             <div class="card" style="width:200px">
                                 <img class="card-img-top" src="{{ asset('_uploads/'.$d->photo) }}" alt="Card image" style="width:100%">
                                 <div class="card-body">
@@ -62,8 +63,8 @@
             </div>
 
 
-
-
+</div>
+  </div>
 
 
 

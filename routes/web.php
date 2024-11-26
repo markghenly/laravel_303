@@ -23,5 +23,16 @@ Route::get('/dashboard', function () {
     return view('pages.dashboard');
 });
 
+Route::get('/add-book-form', function () {
+    return view('pages.add-book-form');
+});
+
+
+Route::get('/add-book-form', function () {
+    return view('pages.add-book-form');
+});
+
 Route::get('book',[BookController::class,'index']);
+Route::get('/add-book-form',[BookController::class,'show_add_form']);
+Route::post('/add-book-form',[BookController::class,'do_add'])->name('add-book');
 
